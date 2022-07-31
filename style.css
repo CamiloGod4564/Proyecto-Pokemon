@@ -1,0 +1,273 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color:#04161b;
+    
+}
+.menu{
+    background-image: url(./img/pokebola.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    padding: 40px;
+    padding-top: 0px;
+    margin-left: 50%;
+}
+.logo{
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    height: 60px;
+    margin-top: -18px;
+}
+
+
+
+body{
+    background-image: url(./img/fondo1.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+}
+img{
+    height: 150px;
+    width: auto;
+}
+h1{
+    text-align: center;
+    margin-top:5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hi1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+.hi2{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.phone {
+    border-top: 50%;
+    position: relative;
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;
+    margin-top: 40px;
+    margin-left: 33%;
+    background: #CCEFFF;
+    box-shadow: 19px 37px rbg(0, 0, 0, 0.30), 15px 12px rbg(0, 0, 0, 0.22);
+}
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 80px;
+    background-image: url(./img/charmilion.png);
+    background-size: 80px 80px;
+    background-repeat:no-repeat;
+    margin-left: 400px;
+    border-top: -50px;
+    
+    animation-name: charmilio;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes charmilio {
+    0%{ top: 300px}
+    50%{ top:20px}
+    100%{ top: 300px}
+    
+    
+}
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    position: absolute;
+    height: 450px;
+    width: 80px;
+    background-image: url(./img/pokachu.png);
+    background-size: 80px 80px;
+    background-repeat:no-repeat;
+    margin-left: 70px;
+    margin-bottom: 0;
+
+    animation-name: pikachu;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pikachu {
+    0%   {  top:350px;}
+    50%  {  top:150px;}
+    100% {  top:350px;}
+
+}
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 390px;
+    background: green;
+    border-radius: 20px;
+    bottom: 0;
+    
+}
+.layer-4 {
+    position: absolute;
+    z-index: 2;
+    height: 360px;
+    width: 80px;
+    background-image: url(./img/bolbasor.png);
+    background-size: 80px 80px;
+    background-repeat:no-repeat;
+    margin-left: 260px;
+    margin-bottom: 0;
+
+    animation-name: bolbasor;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    
+}
+
+@keyframes bolbasor{
+    0%   {  top:250px;}
+    25%  {  top:-3px;}
+    100% {  top:400px;}
+
+}
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    height: 295px;
+    width: 200px;
+    background: rgb(46, 181, 46);
+    border-radius: 20px;
+    border-bottom-left-radius: 30px;
+    bottom: 0;
+    right: 100px;
+
+}
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    height: 230px;
+    width: 80px;
+    background-image: url(./img/squitle.png);
+    background-size: 80px 80px;
+    background-repeat:no-repeat;
+    bottom: 400;
+    right: 40px;
+
+    animation-name: squitle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squitle{
+    0%   {  top:500px;}
+    25%  {  top:200px;}
+    50%  {  top:500px;}
+    75%  {  top:200px;}
+    100% {  top:500px;}
+
+}
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    right: 0;
+    width: 170px;
+    height: 174px;
+    background:rgb(48, 216, 48);
+    border-radius: 20px;
+    border-bottom-right-radius: 30px;
+    bottom: 0;
+}
+.layer-8 {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: full;
+    height: 100px;
+    background: rgb(23, 145, 78);
+    bottom: 0;
+    border-radius: 20px;
+    color: antiquewhite;
+    text-align: center;
+
+    
+}
+.layer-9 {
+    position: absolute;
+    z-index: 9;
+    margin-left: 0px;
+    width: 200px;
+    height: 255px;
+    background: rgb(46, 181, 46);
+    bottom: 0;
+    border-radius: 20px;
+    color: antiquewhite;
+}
+.zigzag {
+position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(135deg, #329634 25%, transparent 25%) -17px 0,
+    linear-gradient(-135deg, #329634 25%, transparent 25%) -17px 0,
+    linear-gradient(45deg, #19811b00 25%, #a1553c 25%),
+    linear-gradient(-45deg, #25972700 25%, #a1553c 25%);
+    background-size: 35px 35px;
+    border-radius: 20%;
+}
+.total-count{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: 33%;
+    font-size: 35px;
+    
+
+}
+body {counter-reset:game;
+}
+input:checked {
+    counter-increment: game;
+}
+.total-count::after {
+    content: counter(game);
+}
+.derechos{
+    margin-top: 10%;
+    margin-left: 84%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20;
+    background-color: #CCEFFF;
+
+}
+
+
+
+

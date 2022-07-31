@@ -1,0 +1,1138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color:#04161b;
+    
+}
+.menu{
+    background-image: url(./img/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    padding: 25px;
+    padding-top: 0px;
+    margin-left: 50%;
+}
+body{
+    background-image: url(./img/fondo1.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 900px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    column-gap: 20%;
+    row-gap: 0px;
+    
+}
+.logo{
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    height: 60px;
+    margin-top: -18px;
+}
+
+
+.card{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+} 
+.titulo{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.texto{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.textoa{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*Inicio Tipos de Pokemones*/
+
+/*face face planta*/
+.container .card .face.face_p{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_p  {
+    background: #9bcc4f;
+    transform: translateY(0);
+}
+
+.container .card .face.face_p .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_p .content{
+    opacity: 1;
+}
+
+.container .card .face.face_p .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_p .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_pl{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_pl{
+    transform: translateY(0);
+}
+
+.container .card .face.face_pl .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_pl .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_pl .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/* fin face face planta*/
+
+
+/*face face fuego*/
+.container .card .face.face_f{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_f  {
+    background: #fd7d24;
+    transform: translateY(0);
+}
+
+.container .card .face.face_f .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_f .content{
+    opacity: 1;
+}
+
+.container .card .face.face_f .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_f .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_fu{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_fu{
+    transform: translateY(0);
+}
+
+.container .card .face.face_fu .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_fu .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_fu .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face fuego*/
+
+/*face face agua*/
+.container .card .face.face_a{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_a  {
+    background: #4592c1;
+    transform: translateY(0);
+}
+
+.container .card .face.face_a .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_a .content{
+    opacity: 1;
+}
+
+.container .card .face.face_a .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_a .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_ag{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_ag{
+    transform: translateY(0);
+}
+
+.container .card .face.face_ag .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_ag .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_ag .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face agua*/
+
+/*face face bicho*/
+.container .card .face.face_b{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_b  {
+    background: #729f40;
+    transform: translateY(0);
+}
+
+.container .card .face.face_b .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_b .content{
+    opacity: 1;
+}
+
+.container .card .face.face_b .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_b .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_bi{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_bi{
+    transform: translateY(0);
+}
+
+.container .card .face.face_bi .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_bi .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_bi .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face bicho*/
+
+/*face face normal*/
+.container .card .face.face_n{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_n  {
+    background: #a4acaf;
+    transform: translateY(0);
+}
+
+.container .card .face.face_n .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_n .content{
+    opacity: 1;
+}
+
+.container .card .face.face_n .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_n .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_no{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_no{
+    transform: translateY(0);
+}
+
+.container .card .face.face_no .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_no .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_no .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face normal*/
+
+/*face face veneno*/
+.container .card .face.face_v{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_v {
+    background: #bd7ccd;
+    transform: translateY(0);
+}
+
+.container .card .face.face_v .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_v .content{
+    opacity: 1;
+}
+
+.container .card .face.face_v .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_v .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_ve{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_ve{
+    transform: translateY(0);
+}
+
+.container .card .face.face_ve .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_ve .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_ve .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face veneno*/
+
+/*face face electrico*/
+.container .card .face.face_e{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_e {
+    background: #ecd233;
+    transform: translateY(0);
+}
+
+.container .card .face.face_e .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_e .content{
+    opacity: 1;
+}
+
+.container .card .face.face_e .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_e .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_el{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_el{
+    transform: translateY(0);
+}
+
+.container .card .face.face_el .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_el .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_el .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face electrico*/
+
+/*face face tierra*/
+.container .card .face.face_t{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_t {
+    background-image: linear-gradient(#f6dd41,#3f3902 );
+    transform: translateY(0);
+}
+
+.container .card .face.face_t .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_t .content{
+    opacity: 1;
+}
+
+.container .card .face.face_t .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_t .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_ti{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_ti{
+    transform: translateY(0);
+}
+
+.container .card .face.face_ti .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_ti .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_ti .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face tierra*/
+
+/*face face hada*/
+.container .card .face.face_h{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_h {
+    background: #fdb8ec ;
+    transform: translateY(0);
+}
+
+.container .card .face.face_h .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_h .content{
+    opacity: 1;
+}
+
+.container .card .face.face_h .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_h .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_ha{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_ha{
+    transform: translateY(0);
+}
+
+.container .card .face.face_ha .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_ha .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_ha .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face hada*/
+
+/*face face lucha*/
+.container .card .face.face_l{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_l {
+    background: #d66624 ;
+    transform: translateY(0);
+}
+
+.container .card .face.face_l .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_l .content{
+    opacity: 1;
+}
+
+.container .card .face.face_l .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_l .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_lu{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_lu{
+    transform: translateY(0);
+}
+
+.container .card .face.face_lu .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_lu .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_li .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face lucha*/
+
+/*face face Psiquico*/
+.container .card .face.face_ps{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_ps {
+    background: #f267ba ;
+    transform: translateY(0);
+}
+
+.container .card .face.face_ps .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_ps .content{
+    opacity: 1;
+}
+
+.container .card .face.face_ps .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_ps .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_psi{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_psi{
+    transform: translateY(0);
+}
+
+.container .card .face.face_psi .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_psi .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_psi .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face psiquico*/
+
+/*face face Roca*/
+.container .card .face.face_r{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_r {
+    background: #a48b27 ;
+    transform: translateY(0);
+}
+
+.container .card .face.face_r .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_r .content{
+    opacity: 1;
+}
+
+.container .card .face.face_r .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_r .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_ro{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_ro{
+    transform: translateY(0);
+}
+
+.container .card .face.face_ro .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_ro .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_ro .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face Roca*/
+
+/*face face fanastma*/
+.container .card .face.face_fa{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_fa {
+    background: #7b62a3 ;
+    transform: translateY(0);
+}
+
+.container .card .face.face_fa .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_fa .content{
+    opacity: 1;
+}
+
+.container .card .face.face_fa .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_fa .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_fan{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_fan{
+    transform: translateY(0);
+}
+
+.container .card .face.face_fan .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_fan .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_fan .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face Fantasma*/
+
+/*face face dragon*/
+.container .card .face.face_d{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face_d {
+    background-image: linear-gradient(#53a2d4,#f76c53) ;
+    transform: translateY(0);
+}
+
+.container .card .face.face_d .content{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .card:hover .face.face_d .content{
+    opacity: 1;
+}
+
+.container .card .face.face_d .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face_d .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face_dr{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face_dr{
+    transform: translateY(0);
+}
+
+.container .card .face.face_dr .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face_dr .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face_dr .content a:hover{
+    background: #333;
+    color: #fff;
+}   
+/*fin face face dragon*/
+
+/*Fin Tipos de Pokemones*/
+
